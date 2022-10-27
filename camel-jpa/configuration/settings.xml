@@ -25,7 +25,7 @@
       <id>fuse.repos</id>
 
       <repositories>
-        
+
         <repository>
           <id>maven.central</id>
           <name>Maven Central</name>
@@ -38,8 +38,8 @@
             <updatePolicy>never</updatePolicy>
           </releases>
         </repository>
- 
-        
+
+
         <repository>
           <id>redhat.ga</id>
           <name>Red Hat General Availability Repository</name>
@@ -52,8 +52,8 @@
             <updatePolicy>never</updatePolicy>
           </releases>
         </repository>
- 
-        
+
+
         <repository>
           <id>redhat.ea</id>
           <name>Red Hat Early Access Repository</name>
@@ -66,12 +66,24 @@
             <updatePolicy>never</updatePolicy>
           </releases>
         </repository>
- 
+
+        <repository>
+            <id>QE</id>
+            <url>https://nexus.fuse-qe.eng.rdu2.redhat.com/repository/fuse-all</url>
+        </repository>
+
+
       </repositories>
 
       <pluginRepositories>
-        
-        <pluginRepository>
+
+          <pluginRepository>
+              <id>redhat-qe-repository</id>
+              <url>https://nexus.fuse-qe.eng.rdu2.redhat.com/repository/fuse-all</url>
+          </pluginRepository>
+
+
+          <pluginRepository>
           <id>maven.central</id>
           <name>Maven Central</name>
           <url>https://repo1.maven.org/maven2</url>
@@ -83,8 +95,8 @@
             <updatePolicy>never</updatePolicy>
           </releases>
         </pluginRepository>
- 
-        
+
+
         <pluginRepository>
           <id>redhat.ga</id>
           <name>Red Hat General Availability Repository</name>
@@ -97,8 +109,8 @@
             <updatePolicy>never</updatePolicy>
           </releases>
         </pluginRepository>
- 
-        
+
+
         <pluginRepository>
           <id>redhat.ea</id>
           <name>Red Hat Early Access Repository</name>
@@ -111,7 +123,7 @@
             <updatePolicy>never</updatePolicy>
           </releases>
         </pluginRepository>
- 
+
       </pluginRepositories>
     </profile>
   </profiles>
